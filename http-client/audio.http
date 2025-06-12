@@ -4,6 +4,16 @@ Content-Type: application/json
 Accept: audio/mpeg
 
 {
-  "text": "Já si myslím, že byste měli hlavně Billovi nezapomenout přivést nějakou dobrotu. Nejlépe langoš."
+  "text": "Anyway, I am going to rule y'all once!"
 }
 
+### Transcript the speech
+POST http://localhost:8080/transcripter
+Content-Type: multipart/form-data; boundary=speech
+
+--speech
+Content-Disposition: form-data; name="file"; filename="ai-will-rule.mpeg"
+Content-Type: audio/mpeg
+
+< ../src/main/resources/static/audio/ai-will-rule.mpeg
+--speech--
