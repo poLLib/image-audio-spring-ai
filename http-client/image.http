@@ -4,7 +4,7 @@ Content-Type: application/json
 Accept: image/png
 
 {
-  "question": "Give me a natural picture of a colorful universe with a lot of shiny star dust"
+  "question": "Give me a natural picture of a colorful universe with some in the middle star dust"
 }
 
 ### Describe uploaded Image

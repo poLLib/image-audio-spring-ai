@@ -1,0 +1,9 @@
+### Read the text
+POST http://localhost:8080/speaker
+Content-Type: application/json
+Accept: audio/mpeg
+
+{
+  "text": "Já si myslím, že byste měli hlavně Billovi nezapomenout přivést nějakou dobrotu. Nejlépe langoš."
+}
+
