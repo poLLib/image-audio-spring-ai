@@ -1,0 +1,19 @@
+### Generate Image
+POST http://localhost:8080/image
+Content-Type: application/json
+Accept: image/png
+
+{
+  "question": "Give me a natural picture of a colorful universe with a lot of shiny star dust"
+}
+
+### Describe uploaded Image
+POST http://localhost:8080/vision
+Content-Type: multipart/form-data; boundary=image
+
+--image
+Content-Disposition: form-data; name="file"; filename="dachstein.jpg"
+Content-Type: image/jpeg
+
+< ../src/main/resources/static/images/dachstein.jpg
+--image--
